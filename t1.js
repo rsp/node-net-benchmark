@@ -19,7 +19,7 @@ let connection = 0;
 
 log('Creating server');
 const server = net.createServer((socket) => {
-	socket.pipe(socket);
+  socket.pipe(socket);
 });
 
 server.listen(port, host, () => {
